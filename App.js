@@ -2,7 +2,7 @@ import Expo, { Asset } from 'expo';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import './util/WindowResize';
-
+import GithubButton from './GithubButton';
 import OrbitControls from 'expo-three-orbit-controls';
 import * as THREE from 'three';
 import ExpoTHREE from 'expo-three';
@@ -20,6 +20,7 @@ export default class App extends React.Component {
     // Create an `Expo.GLView` covering the whole screen, tell it to call our
     // `_onGLContextCreate` function once it's initialized.
     return (
+      <View style={{flex: 1}}>
       <OrbitControls
         style={{ flex: 1 }}
         camera={this.state.camera}>
@@ -28,7 +29,8 @@ export default class App extends React.Component {
           onContextCreate={this._onGLContextCreate}
         />
       </OrbitControls>
-
+      <GithubButton />
+      </View>
     );
   }
 
