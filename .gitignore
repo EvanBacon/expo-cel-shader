@@ -1,3 +1,6 @@
 node_modules/**/*
 .expo/*
+yarn.lock
 npm-debug.*
+web-build
+.DS_Store

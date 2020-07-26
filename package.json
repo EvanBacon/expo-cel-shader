@@ -1,17 +1,25 @@
 {
-  "name": "cel",
-  "version": "0.0.0",
-  "description": "Hey Expo!",
-  "author": null,
-  "private": true,
-  "main": "node_modules/expo/AppEntry.js",
+  "name": "expo-three-cel-shader",
+  "version": "1.0.0",
+  "scripts": {
+    "publish": "expo build:web && netlify deploy --dir web-build --prod"
+  },
   "dependencies": {
-    "EventEmitter": "^1.0.0",
-    "expo": "^20.0.0",
-    "expo-three": "^1.0.4",
-    "expo-three-orbit-controls": "^1.0.1",
-    "react": "16.0.0-alpha.12",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-20.0.0.tar.gz",
-    "three": "^0.87.1"
+    "expo": "^38.0.0",
+    "expo-gl": "~8.3.1",
+    "expo-three": "^5.5.1",
+    "expo-three-orbit-controls": "^2.0.0",
+    "react": "16.11.0",
+    "react-native": "https://github.com/expo/react-native/archive/package/sdk-38.tar.gz",
+    "react-native-web": "0.11.7",
+    "react-dom": "~16.11.0",
+    "three": "^0.118.3"
+  },
+  "devDependencies": {
+    "@babel/core": "7.9.0",
+    "@types/react": "~16.9.41",
+    "@types/react-dom": "~16.9.8",
+    "@types/react-native": "~0.62.13",
+    "typescript": "^3.4.5"
   }
 }
